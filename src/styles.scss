@@ -7,6 +7,9 @@
 
 :root {
     --primary-color: #38ada9;
+    --primary-color-transparent: rgba(56, 173, 169, 0.5);
+    --light-background: #dfe6e9;
+    --text-color: #2d3436;
 }
 
 body {
@@ -25,4 +28,9 @@ h1 {
     font-size: 2rem;
     text-align: center;
     margin-top: 3%;
- }
+}
+
+a {
+font-weight: 600;
+color: var(--primary-color);
+}
