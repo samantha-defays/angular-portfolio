@@ -6,15 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&family=Montserrat&family=Mr+De+Haviland&family=Poppins:wght@100;700&display=swap');
 
 :root {
-    --primary-color: #38ada9;
-    --primary-color-transparent: rgba(56, 173, 169, 0.5);
-    --light-background: #dfe6e9;
-    --text-color: #2d3436;
+    --primary-color: #64CCC5;
+    --primary-color-transparent: rgba(127, 17, 224, 0.5);
+    --secondary-color: #176B87;
+    --light-color: #DAFFFB;
+    --dark-color:#04364A;
+    --text-color: #e3dee3;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: lightgrey;
+    background-color: var(--dark-color);
+    color: vqr(--text-color);
 }
 
 main {
