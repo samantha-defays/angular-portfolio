@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
   }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+  }
+
+  small {
+    color: var(--light-color);
+  }
   
   #experiences {
     display: flex;
@@ -125,6 +138,15 @@
     margin: 2% 0;
   }
   
+  .detail img {
+    display: inline;
+    height: 40px;
+  }
+
+  .detail a {
+    color: var(--secondary-color);
+  }
+
   svg {
     display: inline-block;
   }

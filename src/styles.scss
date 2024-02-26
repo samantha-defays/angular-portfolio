@@ -18,10 +18,11 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark-color);
     color: vqr(--text-color);
+    min-height: 100vh;
 }
 
 main {
-    max-width: 80%;
+    max-width: 75vw;
     margin: 0 auto;
 }
 
