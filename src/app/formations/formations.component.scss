@@ -7,12 +7,13 @@ section {
 article {
     margin: 1rem;
     width: 30%;
-    background-color: var(--light-background);
-    color: var(--text-color);
+    background-color: var(--background-color);
+    color: var(--dark-text-color);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    border: 2px solid var(--primary-color);
 
     .side, .content h2 {
         margin-bottom: 1rem;
@@ -58,7 +59,30 @@ article {
 }
 
 article:hover {
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.4s;
+    border: 2px solid var(--primary-color-transparent);
+    color: var(--text-color);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+    .side h4 {
+        color: var(--text-color);
+    }
+}
+
+article#card1:hover {
+    background-color: #DAFFFB;
+
+}
+
+article#card2:hover {
+    background-color: #64CCC5;
+
+}
+
+article#card3:hover {
+    background-color: var(--secondary-color);
+
 }
 
 article .content:hover img {

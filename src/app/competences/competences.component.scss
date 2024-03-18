@@ -1,38 +1,92 @@
-.container {
-   color: var(--text-color);
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: 3% 0;
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 
-   .card {
-      width: 15%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 2px;
-      text-align: center;
-      
-      article {
-         width: 50%;
-         
-         h2 {
-            text-transform: uppercase;
-            font-weight: bold;
-         }
-      }
-      
-      .illustration {
-         width: 30%;
-         padding: 5%;
-         background-color: yellow;
-         border-radius: 50%;
-         border: 5px solid white;
-      }
-      
-      .list {
-         width: 70%;
-         padding: 1%;
-      }
-   }
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#competences {
+   --color: rgba(30, 30, 30);
+   --bgColor: rgba(245, 245, 245);
+   min-height: 100vh;
+   display: grid;
+   align-content: center;
+   gap: 2rem;
+   padding: 0rem 2rem;
+   color: var(--color);
+}
+
+h1 {
+   text-align: center;
+}
+
+ul.cards {
+   width: min(70rem, 90%);
+   margin-inline: auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+   justify-content: center;
+   gap: 2rem;
+   list-style: none;
+   color: var(--text-color);
+}
+
+ul.cards li {
+   max-width: 12rem;
+   justify-self: center;
+   display: grid;
+   grid-template:
+      "icon"
+      "line"
+      "dot"
+      "title"
+      "descr" 1fr;
+   justify-items: center;
+   align-items: flex-start;
+   text-align: center;
+}
+
+ul.cards li .icon {
+   grid-area: icon;
+   width: 6rem;
+   aspect-ratio: 1;
+   display: grid;
+   place-items: center;
+   color: white;
+   font-size: 2.5rem;
+   border: 0.4rem solid var(--light-color);
+   border-radius: 50%;
+   background: var(--accent-color);
+   box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+      inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+}
+
+ul.cards li::before {
+   content: "";
+   grid-area: line;
+   height: 2rem;
+   border-right: 2px dotted currentColor;
+}
+
+ul.cards li::after {
+   content: "";
+   grid-area: dot;
+   width: 1rem;
+   aspect-ratio: 1;
+   border-radius: 50%;
+   background: var(--accent-color);
+   justify-self: center;
+   margin-bottom: 0.5rem;
+}
+
+ul.cards li .title {
+   grid-area: title;
+   margin-block: 0.5rem;
+   font-size: 1.3rem;
+   font-weight: 600;
+   text-align: center;
+   text-transform: uppercase;
 }
