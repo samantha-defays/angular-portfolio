@@ -1,92 +1,40 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 
-*,
-*::before,
-*::after {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+section {
+   display: flex;
+   flex-wrap: wrap;
+
+   article {
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      margin: 1% 2%;
+      padding: 1%;
+      width: 28%;
+      text-align: center;
+      color: var(--text-color);
+      background: rgba(23, 107, 135, 0.47);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(23, 107, 135, 0.3);
+      transition: cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
+
+      i {
+         font-size: 4rem;
+         margin-bottom: 3%;
+         color: var(--primary-color);
+      }
+
+      h2 {
+         margin-bottom: 1rem;
+         text-transform: uppercase;
+         text-decoration: underline;
+      }
+   }
+
 }
 
-#competences {
-   --color: rgba(30, 30, 30);
-   --bgColor: rgba(245, 245, 245);
-   min-height: 100vh;
-   display: grid;
-   align-content: center;
-   gap: 2rem;
-   padding: 0rem 2rem;
-   color: var(--color);
-}
-
-h1 {
-   text-align: center;
-}
-
-ul.cards {
-   width: min(70rem, 90%);
-   margin-inline: auto;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-   justify-content: center;
-   gap: 2rem;
-   list-style: none;
-   color: var(--text-color);
-}
-
-ul.cards li {
-   max-width: 12rem;
-   justify-self: center;
-   display: grid;
-   grid-template:
-      "icon"
-      "line"
-      "dot"
-      "title"
-      "descr" 1fr;
-   justify-items: center;
-   align-items: flex-start;
-   text-align: center;
-}
-
-ul.cards li .icon {
-   grid-area: icon;
-   width: 6rem;
-   aspect-ratio: 1;
-   display: grid;
-   place-items: center;
-   color: white;
-   font-size: 2.5rem;
-   border: 0.4rem solid var(--light-color);
-   border-radius: 50%;
-   background: var(--accent-color);
-   box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
-      inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
-}
-
-ul.cards li::before {
-   content: "";
-   grid-area: line;
-   height: 2rem;
-   border-right: 2px dotted currentColor;
-}
-
-ul.cards li::after {
-   content: "";
-   grid-area: dot;
-   width: 1rem;
-   aspect-ratio: 1;
-   border-radius: 50%;
-   background: var(--accent-color);
-   justify-self: center;
-   margin-bottom: 0.5rem;
-}
-
-ul.cards li .title {
-   grid-area: title;
-   margin-block: 0.5rem;
-   font-size: 1.3rem;
-   font-weight: 600;
-   text-align: center;
-   text-transform: uppercase;
+article:hover {
+   transform: scale(1.1);
 }

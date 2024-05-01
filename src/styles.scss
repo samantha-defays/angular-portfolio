@@ -12,16 +12,19 @@
     --secondary-color-transparent: rgba(23, 107, 135, 0.4);
     --light-color: #DAFFFB;
     --background-color: #dfe6e9;
-    --dark-color:#04364A;
+    --dark-color: #04364A;
+    --secondary-gradient: #0a4e65;
     --text-color: #e3dee3;
     --dark-text-color: #333;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #176B87;
+    opacity: 0.8;
     background-color: var(--dark-color);
-    color: vqr(--text-color);
-    min-height: 100vh;
+    background-image: radial-gradient(circle at center center, #DAFFFB, #176B87), repeating-radial-gradient(circle at center center, #DAFFFB, #DAFFFB, 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
 }
 
 main {
@@ -38,6 +41,6 @@ h1 {
 }
 
 a {
-font-weight: 600;
-color: var(--primary-color);
+    font-weight: 600;
+    color: var(--primary-color);
 }

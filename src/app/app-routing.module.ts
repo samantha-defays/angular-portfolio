@@ -23,10 +23,10 @@ const routes: Routes = [
     path: 'portfolio',
     loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule)
   },
-  {
-    path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
-  },
+  // {
+  //   path: 'contact',
+  //   loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+  // },
   {
     path: '**',
     redirectTo: 'home'
