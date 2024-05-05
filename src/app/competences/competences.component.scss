@@ -23,18 +23,33 @@ section {
       i {
          font-size: 4rem;
          margin-bottom: 3%;
-         color: var(--primary-color);
+         background: -webkit-linear-gradient(#64CCC5, #176B87);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
       }
 
       h2 {
+         font-weight: 600;
          margin-bottom: 1rem;
          text-transform: uppercase;
-         text-decoration: underline;
+         border-bottom: 2px dotted var(--primary-color);
+         padding-bottom: 4px;
+      }
+
+      li:hover {
+         cursor: pointer;
+         color: var(--primary-color);
+         font-weight: 600;
       }
    }
-
 }
 
 article:hover {
+   background: rgba(35, 143, 179, 0.45);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(100, 204, 197, 0.3);
    transform: scale(1.1);
 }
