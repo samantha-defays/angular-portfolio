@@ -13,7 +13,7 @@ article {
     justify-content: space-between;
     flex-direction: column;
     border: 1px solid var(--secondary-color);
-    background: rgba(23, 107, 135, 0.47);
+    background: var(--primary-color-transparent);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -80,7 +80,7 @@ article .content:hover img {
 }
 
 article:hover {
-    background: rgba(35, 143, 179, 0.45);
+    background: var(--dark-color-transparent);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);

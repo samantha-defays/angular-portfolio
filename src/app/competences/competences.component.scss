@@ -3,6 +3,7 @@
 section {
    display: flex;
    flex-wrap: wrap;
+   margin-top: 4rem;
 
    article {
       border-radius: 5px;
@@ -12,7 +13,7 @@ section {
       width: 28%;
       text-align: center;
       color: var(--text-color);
-      background: rgba(23, 107, 135, 0.47);
+      background: var(--primary-color-transparent);
       border-radius: 16px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(5px);
@@ -23,16 +24,13 @@ section {
       i {
          font-size: 4rem;
          margin-bottom: 3%;
-         background: -webkit-linear-gradient(#64CCC5, #176B87);
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
+         color: var(--primary-color);
       }
 
       h2 {
          font-weight: 600;
          margin-bottom: 1rem;
          text-transform: uppercase;
-         border-bottom: 2px dotted var(--primary-color);
          padding-bottom: 4px;
       }
 
@@ -45,7 +43,7 @@ section {
 }
 
 article:hover {
-   background: rgba(35, 143, 179, 0.45);
+   background: var(--dark-color-transparent) !important;
    border-radius: 16px;
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    backdrop-filter: blur(5px);

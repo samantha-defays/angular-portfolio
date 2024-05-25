@@ -144,10 +144,18 @@
 
   .detail a {
     color: var(--secondary-color);
+
+    img {
+      margin-right: 7px;
+    }
+  
+    svg {
+      display: inline-block;
+    }
   }
 
-  svg {
-    display: inline-block;
+  .detail a:hover {
+    cursor: pointer;
   }
 
   .title img {
