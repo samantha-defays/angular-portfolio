@@ -3,6 +3,10 @@
     padding: 0;
   }
 
+  h1 {
+    margin-top: 2rem;
+  }
+
   h2 {
     font-size: 1.5rem;
   }
@@ -152,6 +156,16 @@
     svg {
       display: inline-block;
     }
+  }
+
+  .detail li {
+    margin-left: 1rem;
+  }
+
+  .detail li::marker {
+    content: '■ ';
+    font-size: 1.2em;
+    color: var(--secondary-color);
   }
 
   .detail a:hover {
