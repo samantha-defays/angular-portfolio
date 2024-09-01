@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     loadChildren: () => import('./profil/profil.module').then(m => m.ProfilModule)
   },
   {
@@ -29,7 +29,7 @@ const routes: Routes = [
   // },
   {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: ''
   }
 ];
 
