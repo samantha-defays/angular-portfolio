@@ -1,32 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { ProfilComponent } from './profil/profil.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { FormationsComponent } from './formations/formations.component';
+import { CompetencesComponent } from './competences/competences.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./profil/profil.module').then(m => m.ProfilModule)
+    component: ProfilComponent,
   },
   {
     path: 'experiences',
-    loadChildren: () => import('./experiences/experiences.module').then(m => m.ExperiencesModule)
+    component: ExperiencesComponent,
   },
   {
     path: 'formations',
-    loadChildren: () => import('./formations/formations.module').then(m => m.FormationsModule)
+    component: FormationsComponent,
   },
   {
     path: 'competences',
-    loadChildren: () => import('./competences/competences.module').then(m => m.CompetencesModule)
+    component: CompetencesComponent,
   },
-  {
-    path: 'portfolio',
-    loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule)
-  },
-  // {
-  //   path: 'contact',
-  //   loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
-  // },
   {
     path: '**',
     redirectTo: ''
