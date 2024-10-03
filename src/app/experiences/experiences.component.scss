@@ -87,6 +87,10 @@
     border-bottom: 0;
     border-bottom-right-radius: 0;
   }
+
+  .card:nth-child(odd):before {
+    z-index: -1;
+}
   
   /* Information about the timeline */
   .info {
