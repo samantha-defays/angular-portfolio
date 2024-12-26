@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { TypeWriterComponent } from '../shared/type-writer/type-writer.component';
 
 @Component({
   standalone: true,
   selector: 'app-experiences',
+  imports: [TypeWriterComponent],
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.scss']
 })

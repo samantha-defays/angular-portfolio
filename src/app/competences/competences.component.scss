@@ -1,53 +1,16 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 
-section {
-   display: flex;
-   flex-wrap: wrap;
-   margin-top: 4rem;
-
-   article {
-      border-radius: 5px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      margin: 1% 2%;
-      padding: 1%;
-      width: 28%;
-      text-align: center;
-      color: var(--text-color);
-      background: var(--primary-color-transparent);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-      border: 1px solid rgba(23, 107, 135, 0.3);
-      transition: cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
-
-      i {
-         font-size: 4rem;
-         margin-bottom: 3%;
-         color: var(--primary-color);
-      }
-
-      h2 {
-         font-weight: 600;
-         margin-bottom: 1rem;
-         text-transform: uppercase;
-         padding-bottom: 4px;
-      }
-
-      li:hover {
-         cursor: pointer;
-         color: var(--primary-color);
-         font-weight: 600;
-      }
-   }
-}
-
-article:hover {
-   background: var(--dark-color-transparent) !important;
-   border-radius: 16px;
-   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-   backdrop-filter: blur(5px);
-   -webkit-backdrop-filter: blur(5px);
-   border: 1px solid rgba(100, 204, 197, 0.3);
-   transform: scale(1.1);
+article { 
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    
+    a {
+        font-size: 2.5rem;
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+    }
 }

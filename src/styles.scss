@@ -1,25 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&family=Montserrat&family=Mr+De+Haviland&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&family=Montserrat&family=Mr+De+Haviland&family=Poppins:wght@100;700&display=swap');
 
 :root {
-    --primary-color: #CE8147;
-    --primary-color-transparent: rgba(21, 151, 125, 0.1);
-    --secondary-color: #d29769;
-    --secondary-color-transparent: rgba(173, 227, 151, 0.4);
-    --accent-color: #9c3a96;
-    --light-color: #ffd5b4;
-    --background-color: #dfe6e9;
-    --dark-color: #04364A;
-    --dark-color-transparent: rgba(65, 90, 119, 0.5);
+    --primary-color: #00cec9;
+    --primary-color-transparent: rgba(0, 206, 201, 0.1);
+    --secondary-color: #81ecec;
+    --secondary-color-transparent: rgba(129, 236, 236, 0,5);
+    --accent-color: #FDA7DF;
+    --light-color: #dfe6e9;
+    --background-color: #222f3e;
+    --dark-color: #636e72;
+    --dark-color-transparent: rgba(99, 110, 114, 0.5);
     --secondary-gradient: #0a4e65;
     --text-color: #e3dee3;
     --dark-text-color: #333;
 }
 
+/*
+    _____  ______  _____ ______ _______    _____  _____ _____ 
+    |  __ \|  ____|/ ____|  ____|__   __|  / ____|/ ____/ ____|
+    | |__) | |__  | (___ | |__     | |    | |    | (___| (___  
+    |  _  /|  __|  \___ \|  __|    | |    | |     \___ \\___ \ 
+    | | \ \| |____ ____) | |____   | |    | |____ ____) |___) |
+    |_|  \_\______|_____/|______|  |_|     \_____|_____/_____/
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    _____ ______ _   _ ______ _____            _      
+    / ____|  ____| \ | |  ____|  __ \     /\   | |     
+    | |  __| |__  |  \| | |__  | |__) |   /  \  | |     
+    | | |_ |  __| | . ` |  __| |  _  /   / /\ \ | |     
+    | |__| | |____| |\  | |____| | \ \  / ____ \| |____ 
+    \_____|______|_| \_|______|_|  \_\/_/    \_\______|
+*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: #27306C no-repeat fixed url(../src/assets/images/purple_background.svg);
-    background-size: cover;
+    // background: #27306C no-repeat fixed url(../src/assets/images/dark_texture_03.jpg);
+    // background-size: cover;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 main {
@@ -43,4 +119,5 @@ h1 {
 a {
     font-weight: 600;
     color: var(--primary-color);
+    text-decoration: none;
 }
