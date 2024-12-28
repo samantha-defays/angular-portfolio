@@ -1,76 +1,4 @@
 /*
-  __  __ ______ _   _ _    _ 
- |  \/  |  ____| \ | | |  | |
- | \  / | |__  |  \| | |  | |
- | |\/| |  __| | . ` | |  | |
- | |  | | |____| |\  | |__| |
- |_|  |_|______|_| \_|\____/ 
-*/
-
-nav {
-    margin-top: 1.5rem;
-}
-
-nav ul {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-
-    * {
-        box-sizing: border-box;
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-    }
-
-    li {
-        display: inline-block;
-        list-style: outside none none;
-        margin: 0 1.5em;
-        overflow: hidden;
-    }
-
-    a {
-        padding: 0.3em 0;
-        color: rgba(255, 255, 255, 0.5);
-        position: relative;
-        display: inline-block;
-        letter-spacing: 1px;
-        margin: 0;
-        text-decoration: none;
-    }
-
-    a:before, a:after {
-        position: absolute;
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-    }
-
-    a:before {
-        bottom: 100%;
-        display: block;
-        height: 3px;
-        width: 100%;
-        content: "";
-        background-color: var(--primary-color);
-    }
-
-    a:after {
-        padding: 0.3em 0;
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        content: attr(data-hover);
-        color: white;
-        white-space: nowrap;
-    }
-
-}
-
-nav ul li:hover a, .active-link {
-    transform: translateY(100%);
-}
-
-/*
   __  __          _____ _   _ 
  |  \/  |   /\   |_   _| \ | |
  | \  / |  /  \    | | |  \| |
@@ -79,10 +7,44 @@ nav ul li:hover a, .active-link {
  |_|  |_/_/    \_\_____|_| \_|
 */
 
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 section {
-    text-align: center;
-    color: var(--text-color);
-    font-size: 0.8rem;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.one {
+  background-color: beige;
+}
+
+.two {
+  background-color: coral;
+}
+
+.three {
+  background-color: pink;
+}
+
+.four {
+  background-color: lightblue;
+}
+
+.five {
+  background-color: darkgrey;
+}
+
+.six {
+  background-color: lightgreen;
 }
 
 /*
@@ -95,5 +57,5 @@ section {
 */
 
 footer {
-    margin-top: 10px;
+  margin-top: 10px;
 }
