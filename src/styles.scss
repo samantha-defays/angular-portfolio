@@ -3,18 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&family=Montserrat&family=Mr+De+Haviland&family=Poppins:wght@100;700&display=swap');
 
 :root {
-    --primary-color: #00cec9;
-    --primary-color-transparent: rgba(0, 206, 201, 0.1);
-    --secondary-color: #81ecec;
-    --secondary-color-transparent: rgba(129, 236, 236, 0,5);
-    --accent-color: #FDA7DF;
-    --light-color: #dfe6e9;
-    --background-color: #222f3e;
-    --dark-color: #636e72;
-    --dark-color-transparent: rgba(99, 110, 114, 0.5);
-    --secondary-gradient: #0a4e65;
-    --text-color: #e3dee3;
-    --dark-text-color: #333;
+    --primary-color: #2d3436;
+    --primary-color-transparent: rgba(45, 52, 54, 0.1);
+    --secondary-color: #dfe6e9;
+    --secondary-color-transparent: rgba(223, 230, 233, 0,2);
+    --accent-color: #00cec9;
+    --text-color: #b2bec3;
+    --dark-text-color: #636e72;
+    --backgroud-image-dark: repeating-linear-gradient(to right, #636e72, #636e72 1px, #000000 1px, #000000);
+    --background-image-light: repeating-linear-gradient(to right, var(--secondary-color), var(--secondary-color) 1px, #ffffff 1px, #ffffff);
 }
 
 /*
