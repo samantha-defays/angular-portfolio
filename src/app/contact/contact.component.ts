@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  public onClickDownloadCV(language: string): void {
+    console.log("CV French");
+    
+  }
 }
