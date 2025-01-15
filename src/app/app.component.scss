@@ -23,39 +23,6 @@ section {
   scroll-snap-align: start;
 }
 
-.text-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.animated-text {
-  font-size: 2rem;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.word {
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.2);
-  /* Couleur initiale */
-  background: linear-gradient(90deg,
-      #ffffff 0%,
-      #ffffff 50%,
-      rgba(255, 255, 255, 0.2) 50.1%,
-      rgba(255, 255, 255, 0.2) 100%);
-  background-size: 1900% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: background-position 0.3s ease-out;
-}
-
 .one {
   background-color: #ffffff;
   opacity: 0.8;
@@ -70,9 +37,6 @@ section {
   background-size: 190px 190px;
   background-image: var(--backgroud-image-dark);
   color: var(--dark-text-color);
-  height: 200vh !important;
-  /* Pour permettre le scroll dans la section */
-  position: relative;
 }
 
 .three {
@@ -81,7 +45,6 @@ section {
   background-size: 190px 190px;
   background-image: var(--background-image-light);
   color: var(--text-color);
-
 }
 
 .four {
