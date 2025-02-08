@@ -1,0 +1,20 @@
+p {
+  font-size: 3rem;
+  background: linear-gradient(to right, #fff, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: background 2s linear; /* Durée de la transition : 2 secondes */
+  animation: change-color forwards;
+  animation-timeline: scroll(nearest);
+}
+
+@keyframes change-color {
+  from {
+    color: grey;
+  }
+  to {
+    color: white;
+  }
+}

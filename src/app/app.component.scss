@@ -45,6 +45,7 @@ section {
   background-size: 190px 190px;
   background-image: var(--background-image-light);
   color: var(--text-color);
+  height: 200vh;
 }
 
 .four {
@@ -80,17 +81,4 @@ app-profile {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/*
-  ______ ____   ____ _______ ______ _____  
- |  ____/ __ \ / __ \__   __|  ____|  __ \ 
- | |__ | |  | | |  | | | |  | |__  | |__) |
- |  __|| |  | | |  | | | |  |  __| |  _  / 
- | |   | |__| | |__| | | |  | |____| | \ \ 
- |_|    \____/ \____/  |_|  |______|_|  \_\
-*/
-
-footer {
-  margin-top: 10px;
 }
